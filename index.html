@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IQUL Dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel=”icon” href=”pictures/icon.png” type=”image/x-icon”>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+<script>
+    function goToPage(select) {
+        var value = select.value;
+        if (value == 1) {
+            window.location.href = "https://www.google.com"
+        }
+        else if (value == 2) {
+            window.location.href = "https://www.google.com"
+        }
+    }
+</script>
+<body>
+    <img src="pictures/icon.png" alt="Логотип" height="56" width="56">
+    <h1><a href="/index.html">Главная</a></h1>
+    <select name="products" onchange="goToPage(this)">
+            <option value="1" selected>Проекты</option>
+            <option value="1">LeakedAI</option>
+            <option value="2">MultiStore</option>
+            <option value="3">XProshiv</option>
+            <option value="4">Roblox Places</option>
+    </select>
+</body>
+</html>
