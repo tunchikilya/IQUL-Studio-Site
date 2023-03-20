@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IQUL Dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel=”icon” href=”pictures/icon.png” type=”image/x-icon”>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+<script>
+    function goToPage(select) {
+        var value = select.value;
+        if (value == 1) {
+            window.location.href = "index.html"
+        }
+        else if (value == 2) {
+            window.location.href = "https://www.google.com"
+        }
+        else if (value == 3) {
+            window.location.href = "https://www.google.com"
+        }
+        else if (value == 4) {
+            window.location.href = "https://www.google.com"
+        }
+        else if (value == 5) {
+            window.location.href = "https://www.google.com"
+        }
+    }
+</script>
+<body>
+    <a href="pictures/komaru.webm"><img src="pictures/icon.png" alt="Логотип" height="56" width="56"></a>
+    <h1><a href="/index.html">Главная</a></h1>
+    <select name="products" onchange="goToPage(this)">
+            <option value="1" selected="True">Проекты</option>
+            <option value="2">LeakedAI</option>
+            <option value="3">MultiStore</option>
+            <option value="4">XProshiv</option>
+            <option value="5">Roblox Places</option>
+    </select>
+    <button class="bn">Поддержать</button>
+    <img src="pictures/card.png" width="212" height="124" class="card">  
+</body>
+</html>
